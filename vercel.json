@@ -1,15 +1,5 @@
 {
-  "buildCommand": "pnpm build",
-  "outputDirectory": "dist",
-  "framework": "vite",
-  "env": {
-    "VITE_OAUTH_PORTAL_URL": "@vite_oauth_portal_url",
-    "VITE_APP_ID": "@vite_app_id",
-    "VITE_OWNER_OPEN_ID": "@vite_owner_open_id",
-    "VITE_API_URL": "@vite_api_url",
-    "BUILT_IN_FORGE_API_URL": "@built_in_forge_api_url",
-    "BUILT_IN_FORGE_API_KEY": "@built_in_forge_api_key",
-    "OPENAI_API_KEY": "@openai_api_key",
-    "APIFY_API_TOKEN": "@apify_api_token"
-  }
+  "installCommand": "pnpm install --no-frozen-lockfile",
+  "buildCommand": "pnpm run build",
+  "outputDirectory": "dist/public"
 }

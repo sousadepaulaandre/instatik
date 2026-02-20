@@ -1,0 +1,204 @@
+LISTA DE ARQUIVOS DO PROJETO SOCIAL COMMERCE MONITOR
+=====================================================
+
+Total de arquivos: ~200+
+Tamanho compactado: 224 KB
+Tamanho descompactado: ~2 MB (sem node_modules)
+
+ARQUIVOS PRINCIPAIS NA RAIZ:
+----------------------------
+✓ package.json              - Dependências e scripts
+✓ pnpm-lock.yaml           - Lock file do pnpm
+✓ tsconfig.json            - Configuração TypeScript
+✓ vite.config.ts           - Configuração Vite
+✓ vitest.config.ts         - Configuração de testes
+✓ drizzle.config.ts        - Configuração do banco
+✓ vercel.json              - Configuração Vercel
+✓ .gitignore               - Arquivos ignorados
+✓ .env.example             - Exemplo de variáveis
+✓ README.md                - Documentação principal
+✓ DEPLOY_VERCEL.md         - Guia de deploy
+✓ GUIA_DEPLOY_PERMANENTE.md - Guia completo
+✓ PROBLEMAS_ENCONTRADOS.md  - Problemas corrigidos
+✓ MELHORIAS_SUGERIDAS.md    - Roadmap
+✓ RESUMO_PROJETO.md         - Resumo executivo
+✓ todo.md                   - Lista de tarefas
+✓ debug-collector.js        - Debug helper
+
+PASTA CLIENT/ (Frontend):
+-------------------------
+✓ client/index.html
+✓ client/src/
+  ✓ main.tsx               - Entry point
+  ✓ App.tsx                - Componente principal
+  ✓ index.css              - Estilos globais
+  ✓ const.ts               - Constantes
+  
+  ✓ pages/                 - Páginas da aplicação
+    - Home.tsx
+    - Dashboard.tsx
+    - DashboardExpanded.tsx
+    - DashboardExpandedV2.tsx
+    - DashboardKaloStyle.tsx
+    - ProductComparison.tsx
+    - SellerProfile.tsx
+    - NotFound.tsx
+    - ComponentShowcase.tsx
+  
+  ✓ components/            - Componentes React
+    - DashboardLayout.tsx
+    - DashboardLayoutSkeleton.tsx
+    - ChartComponents.tsx
+    - ChartComponentsWithFilter.tsx
+    - ImprovedCharts.tsx
+    - DateRangeFilter.tsx
+    - AdvancedProductSearch.tsx
+    - AIChatBox.tsx
+    - ErrorBoundary.tsx
+    - Map.tsx
+    - ManusDialog.tsx
+    - ThemeContext.tsx
+    
+    ✓ ui/                  - Componentes UI (shadcn)
+      - accordion.tsx
+      - alert.tsx
+      - alert-dialog.tsx
+      - avatar.tsx
+      - badge.tsx
+      - button.tsx
+      - card.tsx
+      - chart.tsx
+      - checkbox.tsx
+      - dialog.tsx
+      - dropdown-menu.tsx
+      - form.tsx
+      - input.tsx
+      - label.tsx
+      - select.tsx
+      - table.tsx
+      - tabs.tsx
+      - tooltip.tsx
+      - ... (40+ componentes UI)
+  
+  ✓ lib/                   - Utilitários
+    - utils.ts
+    - trpc.ts
+    - db.ts
+  
+  ✓ hooks/                 - React Hooks
+    - useAuth.ts
+    - useMobile.tsx
+    - usePersistFn.ts
+    - useComposition.ts
+  
+  ✓ data/                  - Dados mockados
+    - mockData.ts
+    - expandedMockData.ts
+    - expandedMockDataEnhanced.ts
+    - chartData.ts
+    - expandedChartData.ts
+    - insightsData.ts
+  
+  ✓ contexts/              - Contextos React
+    - ThemeContext.tsx
+
+PASTA SERVER/ (Backend):
+------------------------
+✓ server/
+  ✓ index.ts               - Entry point do servidor
+  ✓ vite.ts                - Integração Vite
+  ✓ trpc.ts                - Configuração tRPC
+  ✓ routers.ts             - Rotas principais
+  ✓ db.ts                  - Conexão banco de dados
+  ✓ storage.ts             - Storage S3
+  ✓ types.ts               - Tipos TypeScript
+  ✓ errors.ts              - Tratamento de erros
+  ✓ const.ts               - Constantes
+  
+  ✓ routers/               - Rotas tRPC
+    - systemRouter.ts
+    - notification.ts
+    - dataApi.ts
+  
+  ✓ services/              - Serviços
+    - oauth.ts             - Autenticação OAuth
+    - llm.ts               - Integração LLM
+    - imageGeneration.ts   - Geração de imagens
+    - voiceTranscription.ts - Transcrição de voz
+    - map.ts               - Mapas
+    - context.ts           - Contexto
+    - cookies.ts           - Gerenciamento cookies
+    - env.ts               - Variáveis ambiente
+    - sdk.ts               - SDK Manus
+    - apify.ts             - Integração Apify
+    - aiInsightService.ts  - Insights IA
+    - dataCollectionService.ts - Coleta dados
+    - notificationService.ts - Notificações
+    - dataSync.ts          - Sincronização
+    
+  ✓ tests/                 - Testes
+    - auth.logout.test.ts
+    - notificationService.test.ts
+    - dataCollectionService.test.ts
+
+PASTA SHARED/ (Compartilhado):
+------------------------------
+✓ shared/
+  ✓ const.ts               - Constantes compartilhadas
+  ✓ manusTypes.ts          - Tipos Manus
+
+PASTA DRIZZLE/ (Banco de Dados):
+--------------------------------
+✓ drizzle/
+  ✓ schema.ts              - Schema do banco
+  ✓ relations.ts           - Relações
+  
+  ✓ migrations/            - Migrations SQL
+    - 0000_burly_lockheed.sql
+    - 0001_luxuriant_katie_power.sql
+    - meta/
+      - _journal.json
+      - 0000_snapshot.json
+      - 0001_snapshot.json
+
+PASTA PATCHES/:
+--------------
+✓ patches/
+  ✓ wouter@3.7.1.patch     - Patch do wouter
+
+ARQUIVOS DE CONFIGURAÇÃO:
+-------------------------
+✓ components.json          - Configuração shadcn/ui
+✓ .prettierrc              - Configuração Prettier
+✓ .prettierignore          - Arquivos ignorados Prettier
+
+ARQUIVOS NÃO INCLUÍDOS (ignorados pelo .gitignore):
+---------------------------------------------------
+✗ node_modules/            - Dependências (será instalado depois)
+✗ dist/                    - Build (será gerado no deploy)
+✗ .env.local               - Variáveis locais (dados sensíveis)
+✗ .git/                    - Histórico Git
+
+TECNOLOGIAS UTILIZADAS:
+-----------------------
+- React 19
+- TypeScript
+- Vite
+- TailwindCSS
+- tRPC
+- Drizzle ORM
+- shadcn/ui
+- Recharts
+- Wouter (routing)
+- Tanstack Query
+
+TOTAL APROXIMADO:
+-----------------
+- Arquivos: ~200+
+- Pastas: ~20+
+- Linhas de código: ~15.000+
+- Componentes React: ~80+
+- Componentes UI: ~40+
+- Serviços: ~15+
+- Páginas: ~8+
+
