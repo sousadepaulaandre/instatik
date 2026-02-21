@@ -7,13 +7,15 @@ import { ThemeProvider } from "@/contexts/ThemeContext";
 import Home from "@/pages/Home";
 import ProductComparison from "@/pages/ProductComparison";
 import DashboardKaloStyle from "@/pages/DashboardKaloStyle";
+import SocialMediaAnalytics from "@/pages/SocialMediaAnalytics";
 
 function Router() {
   return (
     <Switch>
-      <Route path={"/"} component={Home} />
+      <Route path={"="} component={Home} />
       <Route path={"/dashboard"} component={DashboardKaloStyle} />
       <Route path={"/compare"} component={ProductComparison} />
+      <Route path={"/analytics"} component={SocialMediaAnalytics} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
